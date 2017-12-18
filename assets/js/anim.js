@@ -37,9 +37,7 @@ function animateCss(node, animationName, cssOptions, callback){
             // add supported webkit for each option
             supported_webkits().forEach((webkit) => {
                 // add style like : '-moz-animation-duration:3s'
-                // node.setAttribute("style", webkit + "-" + opt + ":" + cssOptions[opt]);
                 node.style[webkit + "-" + opt] = cssOptions[opt];
-                console.log(node.style)
             });
         }
     }
@@ -54,7 +52,9 @@ function animateCss(node, animationName, cssOptions, callback){
 // DOM elements
 const header = document.getElementById("header");
 const logo = _getChildByClassname(header, "logo");
+const nav = _getChildByClassname(header, "navlist");
+const content = _getChildByClassname(header, "content");
+const inner = _getChildByClassname(content, "inner");
 
 // running animations
-//TODO: does not work...
-animateCss(logo, 'fadeInUp', {"animation-duration": "12s", "animation-delay" : "1s"});
+animateCss(logo, 'fadeInUp', {"animation-duration": "1s", "animation-delay" : "0.3s"});
