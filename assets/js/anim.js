@@ -37,7 +37,9 @@ function animateCss(node, animationName, cssOptions, callback){
             // add supported webkit for each option
             supported_webkits().forEach((webkit) => {
                 // add style like : '-moz-animation-duration:3s'
-                node.setAttribute("style", webkit + "-" + opt + ":" + cssOptions[opt]);
+                // node.setAttribute("style", webkit + "-" + opt + ":" + cssOptions[opt]);
+                node.style[webkit + "-" + opt] = cssOptions[opt];
+                console.log(node.style)
             });
         }
     }
@@ -49,11 +51,10 @@ function animateCss(node, animationName, cssOptions, callback){
     });
 }
 
-// getting DOM elements
+// DOM elements
 const header = document.getElementById("header");
 const logo = _getChildByClassname(header, "logo");
 
 // running animations
-
 //TODO: does not work...
-animateCss(logo, 'fadeInUp', {"animation-duration": "10s", "animation-delay" : "10s"});
+animateCss(logo, 'fadeInUp', {"animation-duration": "12s", "animation-delay" : "1s"});
