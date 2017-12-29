@@ -3,6 +3,10 @@
  * https://github.com/daneden/animate.css
  */
 
+/**
+ * Get a list of supproted webkits
+ * @returns {Array}
+ */
 function supported_webkits(){
     return ["-moz", "-ms", "o", "-webkit", ""]
 }
