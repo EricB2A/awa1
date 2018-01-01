@@ -1,3 +1,4 @@
+/*
 const title = document.querySelector(".inner > h1");
 console.log(title); // ok
 
@@ -7,3 +8,4 @@ var loopReverse = anime({
   loop: 3,
   direction: 'reverse'
 });
+*/
