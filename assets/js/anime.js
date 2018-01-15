@@ -70,9 +70,9 @@ var lineDrawing = anime({
     targets: '.logo .lines path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
-    duration: 1500,
+    duration: 2000,
     // delay: function(el, i) { return i * 250 },
     direction: 'alternate',
-    delay: 1500,
+    delay: 2000,
     loop: false
 });
