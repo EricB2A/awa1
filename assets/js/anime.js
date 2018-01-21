@@ -1,3 +1,4 @@
+/* logo */
 var lineDrawing = anime({
     targets: '.svg_header path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -8,16 +9,16 @@ var lineDrawing = anime({
     loop: true
 });
 
-var el = document.querySelector('#header nav ul');
-el.style.transform = "translateY(500px)";
-el.style.transform += "scale(0.5)";
 
+/* menu */
+var el = document.querySelector('#header nav ul');
+el.style.transform = "translateY(500)"
+el.style.transform += "scale(0.4)";
 var menuAnime = anime({
     targets: el,
-    translateX: 0,
+    duration: 1500,
     easing: "easeInOutQuad",
     duration: 1000,
-    delay: 1500,
     scale: {
         value: 1,
         duration: 1600,

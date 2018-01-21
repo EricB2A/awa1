@@ -16,37 +16,3 @@
 .animate-link:hover::after {
     width: 100%;
 }
-
-
-form {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  display: none;
-}
-
-input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  font-size: 30px;
-  border: 0;
-  box-shadow: none;
-  padding: 10px 20px;
-  color: #000080;
-  outline: none;
-  box-sizing: border-box;
-  font-weight: 300;
-  font-family: 'Lato', sans-serif;
-}
-
-input::-webkit-input-placeholder,
-input:-moz-placeholder {
-  color: #000080;
-  font-size: 30px;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-}
