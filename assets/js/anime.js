@@ -1,15 +1,3 @@
-/*
-const title = document.querySelector(".inner > h1");
-console.log(title); // ok
-
-var loopReverse = anime({
-  targets: '.logo',
-  translateX: 250,
-  loop: 3,
-  direction: 'reverse'
-});
-*/
-
 var lineDrawing = anime({
     targets: '.svg_header path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -21,8 +9,9 @@ var lineDrawing = anime({
 });
 
 var el = document.querySelector('#header nav ul');
-el.style.transform = "translateX(300%)";
+el.style.transform = "translateY(500px)";
 el.style.transform += "scale(0.5)";
+
 var menuAnime = anime({
     targets: el,
     translateX: 0,
@@ -40,7 +29,6 @@ var menuAnime = anime({
 
 /* footer */
 let footer_year = document.querySelector("#footer_year");
-console.log(footer_year);
 let obj = 1;
 var JSobject = anime({
     targets: obj,
@@ -57,7 +45,7 @@ var obj_ = { Bouricci: 0 };
 var JSobject = anime({
     targets: obj_,
     Bouricci: 2018,
-    duration: 4000,
+    duration: 6000,
     round: 1,
     easing: 'linear',
     update: function() {
