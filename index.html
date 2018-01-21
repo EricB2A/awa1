@@ -91,7 +91,7 @@
 							<article id="contact">
 								<h2 class="major animate-link">Contact</h2>
 
-								<form method="post" action="#">
+								<form method="post" action="javascript:void(0);">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
@@ -105,8 +105,15 @@
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
+										<li><input type="submit" value="Send Message" class="special" onclick="load()"/></li>
+										<li><input type="reset" value="Reset" onclick="unload()"/></li>
+										<li>
+											<div class="loader">
+												<div class="dot"></div>
+												<div class="dot"></div>
+												<div class="dot"></div>
+											</div>
+										</li>
 									</ul>
 								</form>
 								<ul class="icons">
@@ -382,7 +389,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/jquery.lettering.js"></script>
 			<script src="assets/js/jquery.textillate.js"></script>
 			<script src="assets/js/textillate.js"></script>
-
+			<script src="assets/js/dynamics.js"></script>
+			<script src="assets/js/loading.js"></script>
 	</body>
 	</body>
 </html>
