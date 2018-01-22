@@ -1,3 +1,5 @@
+
+/* Title animation */
 .animate-link{
     display: inline-block;
     color: #fff;
@@ -16,6 +18,8 @@
 .animate-link:hover::after {
     width: 100%;
 }
+
+/* Dots for form animation */ 
 
 .dot{
     display: none;

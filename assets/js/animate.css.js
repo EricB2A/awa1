@@ -12,7 +12,7 @@ function supported_webkits(){
 }
 
 /**
- * TODO: comment
+ * Get first child node from parent node. 
  * @param {Node} parent         parent node to search for
  * @param {String} classname    class to find
  * @returns {Boolean|Node}      false if cannot find child, Node object if found
@@ -29,7 +29,10 @@ function _getChildByClassname(parent, classname){
 
 /**
  * Sugar for $('#yourElement').addClass('animated bounceOutLeft');
- * TODO: add correct docstirngs
+ * @param {Node} node               parent node
+ * @param {String} animationName    animation to add
+ * @param {Hash} cssOption          custom css to add i.e. {'display': 'block'}
+ * @param {Function} callback       function callbed after animation
  */
 function animateCss(node, animationName, cssOptions, callback){
     // list of event ending the animation
@@ -60,5 +63,5 @@ const nav = _getChildByClassname(header, "navlist");
 const content = _getChildByClassname(header, "content");
 const inner = _getChildByClassname(content, "inner");
 
-// running animations
+// running animation
 animateCss(logo, 'fadeInUp', {"animation-duration": "1s", "animation-delay" : "0.3s"});
