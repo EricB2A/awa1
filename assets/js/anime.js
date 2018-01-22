@@ -12,7 +12,6 @@ var lineDrawing = anime({
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
     duration: 2000,
-    // delay: function(el, i) { return i * 250 },
     direction: 'alternate',
     delay: 2000,
     loop: false
