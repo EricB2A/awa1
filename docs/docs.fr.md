@@ -143,11 +143,6 @@ for(var i=0; i<dots.length; i++) {
     }
     dynamics.setTimeout(animateDots, 2500)
 ```
-Si l'animation s'effectue plusieurs fois, l'effet de gravité sur les éléments est cumulé, donnant un effet bizarre (illustration ci-dessous).  
-Une variable `lock` est donc assignée pour s'assurer que l'animation ne se lance qu'une fois.  
-![loading_fail](src/loading_fail.gif)  
-Le bouton **reset** cache également l'animation.  
-
 ```css
 .dot{
     display: none;
@@ -159,3 +154,9 @@ Le bouton **reset** cache également l'animation.
     background: black;
 }
 ``` 
+Si l'animation s'effectue plusieurs fois, l'effet de gravité sur les éléments est cumulé, donnant un effet bizarre (illustration ci-dessous).  
+Une variable `lock` est donc assignée pour s'assurer que l'animation ne se lance qu'une fois.  
+![loading_fail](src/loading_fail.gif)  
+Le bouton **reset** cache également l'animation.  
+
+
